@@ -34,7 +34,7 @@ async fn real_time(
     }
 
     // 权益数据统计
-    let mut equity_histories: VecDeque<Value> = VecDeque::new();
+    
 
     // 净值数据
     // let mut net_worth_histories: VecDeque<Value> = VecDeque::new();
@@ -47,6 +47,7 @@ async fn real_time(
         // let mut response: Map<String, Value> = Map::new();
         // let mut json_data: Map<String, Value> = Map::new();
         let mut map: Map<String, Value> = Map::new();
+        let mut equity_histories: VecDeque<Value> = VecDeque::new();
         
 
         // 监控服务器状态
@@ -150,10 +151,11 @@ async fn real_time(
             equity_histories.push_back(Value::from(equity_map));
             }
     
-            let res = trade_mapper::TradeMapper::insert_equity(Vec::from(equity_histories.clone()));
-            println!("插入权益数据{}, 数据{:?}, 名字{}", res, Vec::from(equity_histories.clone()), name);
+            
 
         }
+        let res = trade_mapper::TradeMapper::insert_equity(Vec::from(equity_histories.clone()));
+        println!("插入权益数据{}, 数据{:?}", res, Vec::from(equity_histories.clone()));
 
 
         // 获取账户信息
@@ -165,7 +167,7 @@ async fn real_time(
 
         // 等待下次执行
         info!("waiting for next real time task...({})", 4320000 * 10);
-        tokio::time::delay_for(Duration::from_millis(4320000 * 10)).await;
+        tokio::time::delay_for(Duration::from_millis(1000 * 10)).await;
     }
 }
 
