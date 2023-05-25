@@ -200,7 +200,6 @@ async fn main() {
         // let mut futures_config: Map<String, Value> = Map::new();
         // let mut servers_config = Map::new();
         let binance_config = config.get("Binance").unwrap();
-        let name = binance_config.get("futures").unwrap().get("name").unwrap().as_str().unwrap();
         let binance_future_config = binance_config.get("futures").unwrap().as_array().unwrap();
         let server_config = config.get("Server").unwrap();
         let symbols = config.get("Symbols").unwrap().as_array().unwrap();
