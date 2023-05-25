@@ -1,8 +1,8 @@
 use std::collections::VecDeque;
 use std::{collections::HashMap, fs, time::Duration};
-use chrono::Local;
-use chrono::{DateTime, NaiveDateTime, Utc};
-use log::{debug, info, warn};
+// use chrono::Local;
+use chrono:: Utc;
+use log::{info, warn};
 use serde_json::{Map, Value};
 // use tokio::{sync::broadcast::{self, Receiver}};
 use test_alarm::adapters::binance::futures::http::actions::BinanceFuturesApi;
@@ -129,10 +129,13 @@ async fn real_time(
         let new_total_equity_eth: f64 = ((new_total_equity / best_price) - 40.00) * best_price;
         equity_map.insert(String::from("time"), Value::from(date));
         equity_map.insert(String::from("name"), Value::from(name));
-        equity_map.insert(String::from("equity_eth"), Value::from(new_total_equity_eth));
-        equity_map.insert(String::from("equity"), Value::from(new_total_equity));
+        equity_map.insert(String::from("equity_eth"), Value::from(new_total_equity_eth.to_string()));
+        equity_map.insert(String::from("equity"), Value::from(new_total_equity.to_string()));
         equity_histories.push_back(Value::from(equity_map));
         }
+
+        let res = trade_mapper::TradeMapper::insert_equity(Vec::from(equity_histories.clone()));
+        println!("插入权益数据{}", res);
 
         
 
