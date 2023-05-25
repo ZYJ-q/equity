@@ -251,29 +251,29 @@ async fn main() {
         // }
 
         info!("created ssh client");
-        let binance_futures_api=BinanceFuturesApi::new(
-            binance_config
-                .get("futures")
-                .unwrap()
-                .get("base_url")
-                .unwrap()
-                .as_str()
-                .unwrap(),
-            binance_config
-                .get("futures")
-                .unwrap()
-                .get("api_key")
-                .unwrap()
-                .as_str()
-                .unwrap(),
-            binance_config
-                .get("futures")
-                .unwrap()
-                .get("secret_key")
-                .unwrap()
-                .as_str()
-                .unwrap(),
-        );
+        // let binance_futures_api=BinanceFuturesApi::new(
+        //     binance_config
+        //         .get("futures")
+        //         .unwrap()
+        //         .get("base_url")
+        //         .unwrap()
+        //         .as_str()
+        //         .unwrap(),
+        //     binance_config
+        //         .get("futures")
+        //         .unwrap()
+        //         .get("api_key")
+        //         .unwrap()
+        //         .as_str()
+        //         .unwrap(),
+        //     binance_config
+        //         .get("futures")
+        //         .unwrap()
+        //         .get("secret_key")
+        //         .unwrap()
+        //         .as_str()
+        //         .unwrap(),
+        // );
 
         
         info!("created http client");
