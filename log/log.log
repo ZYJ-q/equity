@@ -1,0 +1,184 @@
+2023-04-02T15:46:23.517035800+08:00 - begin
+2023-04-02T16:17:46.857811300+08:00 - begin
+2023-04-02T16:18:30.406305100+08:00 - begin
+2023-04-02T16:28:19.602426300+08:00 - begin
+2023-04-02T16:29:26.220320400+08:00 - begin
+2023-04-02T16:29:56.964136700+08:00 - begin
+2023-04-02T16:30:28.978397900+08:00 - begin
+2023-04-02T16:32:03.963403900+08:00 - begin
+2023-04-02T16:32:41.983183700+08:00 - begin
+2023-04-02T16:33:15.824841200+08:00 - begin
+2023-04-02T16:35:15.942941300+08:00 - begin
+2023-04-02T16:35:18.863647600+08:00 - done
+2023-04-02T16:49:12.027296100+08:00 - begin
+2023-04-02T16:49:39.193432700+08:00 - begin
+2023-04-02T17:17:46.933065+08:00 - begin
+2023-04-02T17:17:49.455139500+08:00 - done
+2023-04-02T17:17:56.223380800+08:00 - begin
+2023-04-02T17:18:12.061887100+08:00 - done
+2023-04-02T17:18:19.815682500+08:00 - begin
+2023-04-02T17:18:21.518607100+08:00 - done
+2023-04-02T17:21:34.164905100+08:00 - begin
+2023-04-02T17:21:52.927625100+08:00 - done
+2023-04-02T17:22:12.829558400+08:00 - begin
+2023-04-02T17:22:12.930733200+08:00 - error sending request for url (https://fapi.binance.com/fapi/v1/account?timestamp=1680427332829&signature=1589e7005a1a712a38cb7b26fe556c7a70b19f1fbf457d06cfe26f6633da3787): error trying to connect: unexpected EOF during handshake
+2023-04-02T17:22:31.757724400+08:00 - begin
+2023-04-02T17:22:31.841668+08:00 - error sending request for url (https://fapi.binance.com/fapi/v1/account?timestamp=1680427351757&signature=77fb7279d634e83f6bcfaece5533b762415cb0b66321534c40d466e1afd343bc): error trying to connect: unexpected EOF during handshake
+2023-04-02T17:22:36.298800800+08:00 - begin
+2023-04-03T11:39:05.814572100+08:00 - begin
+2023-04-03T11:39:05.901742300+08:00 - error sending request for url (https://fapi.binance.com/fapi/v2/account?timestamp=1680493145815&signature=4f8dedbdd75ec44eb05cbf3b4ec8c5d58e0cdc8566348163070bb2a669bc9bfe): error trying to connect: unexpected EOF during handshake
+2023-04-03T11:39:15.955523900+08:00 - begin
+2023-04-03T11:39:16.385560300+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T11:40:45.163868900+08:00 - begin
+2023-04-03T11:40:45.537686600+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T11:42:29.606880600+08:00 - begin
+2023-04-03T11:42:29.973200500+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T11:43:18.178013300+08:00 - begin
+2023-04-03T11:43:18.572944100+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T11:46:48.110713200+08:00 - begin
+2023-04-03T11:46:48.513272700+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T11:47:38.966301900+08:00 - begin
+2023-04-03T11:47:39.052505200+08:00 - error sending request for url (https://fapi.binance.com/fapi/v2/account?timestamp=1680493658966&signature=e2fc294c27b1ad2f89794159303c0c0b7d75e267bb3d275486507c4ff230ef22): error trying to connect: unexpected EOF during handshake
+2023-04-03T11:47:59.726591700+08:00 - begin
+2023-04-03T11:48:00.086331700+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T11:49:02.925963500+08:00 - begin
+2023-04-03T11:49:03.261807+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T11:51:57.873015400+08:00 - begin
+2023-04-03T11:51:57.957579200+08:00 - error sending request for url (https://fapi.binance.com/fapi/v2/account?timestamp=1680493917873&signature=3789decdd0a557a591108b10d6fa1b86e01dfc7eb5ae5dc81ee36aea35d3ae46): error trying to connect: unexpected EOF during handshake
+2023-04-03T11:52:23.537444400+08:00 - begin
+2023-04-03T11:52:23.631788300+08:00 - error sending request for url (https://fapi.binance.com/fapi/v2/account?timestamp=1680493943537&signature=52d491c767224bb51664c28fa06fd9f1e4f96984f22b2f9621314ce0c7accb44): error trying to connect: unexpected EOF during handshake
+2023-04-03T11:52:49.843661900+08:00 - begin
+2023-04-03T11:52:50.182067600+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T11:54:53.355296200+08:00 - begin
+2023-04-03T11:59:19.084016600+08:00 - begin
+2023-04-03T11:59:43.417240800+08:00 - begin
+2023-04-03T12:00:18.242982500+08:00 - begin
+2023-04-03T12:00:18.648260800+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T12:00:53.293541300+08:00 - begin
+2023-04-03T12:00:53.720058100+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T12:05:05.286918300+08:00 - begin
+2023-04-03T12:05:05.624827400+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T12:05:54.972537100+08:00 - begin
+2023-04-03T12:05:55.364356100+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T12:08:31.166433900+08:00 - begin
+2023-04-03T12:08:31.486393800+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T12:09:56.197321+08:00 - begin
+2023-04-03T12:09:56.569538800+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T12:10:49.279633+08:00 - begin
+2023-04-03T12:10:49.624808700+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T12:10:49.729395900+08:00 - ADA: no order history
+2023-04-03T12:10:49.842338600+08:00 - APT: no order history
+2023-04-03T12:10:49.948208800+08:00 - ATOM: no order history
+2023-04-03T12:10:50.049940+08:00 - AVAX: no order history
+2023-04-03T12:10:50.151747400+08:00 - BNB: no order history
+2023-04-03T12:10:50.255301+08:00 - TRX: no order history
+2023-04-03T12:10:50.361299100+08:00 - MATIC: no order history
+2023-04-03T12:10:50.465300600+08:00 - LINK: no order history
+2023-04-03T12:10:50.573320700+08:00 - SOL: no order history
+2023-04-03T12:10:50.674868900+08:00 - FTM: no order history
+2023-04-03T12:10:50.778684300+08:00 - ETH: no order history
+2023-04-03T12:10:50.881185+08:00 - FIL: no order history
+2023-04-03T12:10:50.985055900+08:00 - LDO: no order history
+2023-04-03T12:10:51.088278900+08:00 - DOT: no order history
+2023-04-03T12:10:51.192416300+08:00 - ETC: no order history
+2023-04-03T12:10:51.297771600+08:00 - APE: no order history
+2023-04-03T12:10:51.406137400+08:00 - XMR: no order history
+2023-04-03T12:10:51.513527100+08:00 - MANA: no order history
+2023-04-03T12:10:51.614577300+08:00 - GRT: no order history
+2023-04-03T12:10:51.715849500+08:00 - NEAR: no order history
+2023-04-03T12:10:56.943447300+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T12:10:57.048152100+08:00 - ADA: no order history
+2023-04-03T12:10:57.152859800+08:00 - APT: no order history
+2023-04-03T12:10:57.253305800+08:00 - ATOM: no order history
+2023-04-03T12:10:57.369969600+08:00 - AVAX: no order history
+2023-04-03T12:10:57.472703600+08:00 - BNB: no order history
+2023-04-03T12:10:57.575640100+08:00 - TRX: no order history
+2023-04-03T12:10:57.683797600+08:00 - MATIC: no order history
+2023-04-03T12:10:57.789060400+08:00 - LINK: no order history
+2023-04-03T12:10:57.896418100+08:00 - SOL: no order history
+2023-04-03T12:10:57.998781+08:00 - FTM: no order history
+2023-04-03T12:10:58.112120800+08:00 - ETH: no order history
+2023-04-03T12:10:58.217573500+08:00 - FIL: no order history
+2023-04-03T12:10:58.323800100+08:00 - LDO: no order history
+2023-04-03T12:10:58.438128500+08:00 - DOT: no order history
+2023-04-03T12:10:58.545547200+08:00 - ETC: no order history
+2023-04-03T12:10:58.655599900+08:00 - APE: no order history
+2023-04-03T12:10:58.759970500+08:00 - XMR: no order history
+2023-04-03T12:10:58.862985800+08:00 - MANA: no order history
+2023-04-03T12:10:58.977949700+08:00 - GRT: no order history
+2023-04-03T12:10:59.083772200+08:00 - NEAR: no order history
+2023-04-03T12:11:04.256651900+08:00 - totalWalletBalance: String("0.00000000")
+2023-04-03T12:11:04.362259900+08:00 - ADA: no order history
+2023-04-03T12:11:04.466867200+08:00 - APT: no order history
+2023-04-03T12:11:04.567667900+08:00 - ATOM: no order history
+2023-04-03T12:11:04.668292500+08:00 - AVAX: no order history
+2023-04-03T12:11:04.773364300+08:00 - BNB: no order history
+2023-04-03T12:11:04.881534900+08:00 - TRX: no order history
+2023-04-03T12:11:04.986693700+08:00 - MATIC: no order history
+2023-04-03T12:11:05.091536900+08:00 - LINK: no order history
+2023-04-03T12:11:05.196641500+08:00 - SOL: no order history
+2023-04-03T12:11:05.314978400+08:00 - FTM: no order history
+2023-04-03T12:11:05.420616+08:00 - ETH: no order history
+2023-04-03T12:11:05.522984900+08:00 - FIL: no order history
+2023-04-03T12:11:05.628497600+08:00 - LDO: no order history
+2023-04-03T12:11:05.731443700+08:00 - DOT: no order history
+2023-04-03T12:11:05.838803700+08:00 - ETC: no order history
+2023-04-03T12:11:05.941830500+08:00 - APE: no order history
+2023-04-03T12:11:06.045965900+08:00 - XMR: no order history
+2023-04-03T12:11:06.151189900+08:00 - MANA: no order history
+2023-04-03T12:11:06.267794800+08:00 - GRT: no order history
+2023-04-03T12:11:06.371967500+08:00 - NEAR: no order history
+2023-04-07T17:48:11.589788500+08:00 - alarm begin(binance account)
+2023-04-07T17:48:11.590213600+08:00 - preparing...
+2023-04-07T17:48:15.332635200+08:00 - created ssh client
+2023-04-07T17:48:15.333911400+08:00 - created http client
+2023-04-07T17:48:15.334131200+08:00 - get ready for real time loop
+2023-04-07T17:48:15.334356700+08:00 - begin real time loop
+2023-04-07T17:48:15.334571600+08:00 - account balance
+2023-04-07T17:48:18.426540900+08:00 - error sending request for url (https://fapi.binance.com/fapi/v2/account?timestamp=1680860895334&signature=d6611f10f6db780533ee96ea869a19956829d5b735948825e009cfa595705ef2): error trying to connect: unexpected EOF during handshake
+2023-04-07T17:56:18.062361600+08:00 - alarm begin(binance account)
+2023-04-07T17:56:18.062703600+08:00 - preparing...
+2023-04-07T17:56:21.029431800+08:00 - created ssh client
+2023-04-07T17:56:21.033673300+08:00 - created http client
+2023-04-07T17:56:21.034615100+08:00 - get ready for real time loop
+2023-04-07T17:56:21.035562900+08:00 - begin real time loop
+2023-04-07T17:56:21.036439200+08:00 - account balance
+2023-04-13T14:06:47.218852300+08:00 - alarm begin(binance account)
+2023-04-13T14:06:47.219449500+08:00 - preparing...
+2023-04-13T14:06:50.513053400+08:00 - created ssh client
+2023-04-13T14:06:50.513472300+08:00 - created http client
+2023-04-13T14:06:50.513773+08:00 - get ready for real time loop
+2023-04-13T14:06:50.514229100+08:00 - begin real time loop
+2023-04-13T14:06:50.514444600+08:00 - again
+2023-04-13T14:06:50.514646+08:00 - account balance
+2023-04-23T22:14:42.597388500+08:00 - alarm begin(binance account)
+2023-04-23T22:14:42.597796200+08:00 - preparing...
+2023-04-23T22:14:48.142005200+08:00 - created ssh client
+2023-04-23T22:14:48.142409200+08:00 - created http client
+2023-04-23T22:14:48.142715900+08:00 - get ready for real time loop
+2023-04-23T22:14:48.143118900+08:00 - begin real time loop
+2023-04-23T22:14:48.143381100+08:00 - again
+2023-04-23T22:14:48.143753600+08:00 - account balance
+2023-04-23T22:15:09.197474200+08:00 - error sending request for url (https://fapi.binance.com/fapi/v2/account?timestamp=1682259288143&signature=7e63de52e5817b04f6d7cd057777b3a6c91d722b9a02adedad65ba6111f27bcf): error trying to connect: tcp connect error: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (os error 10060), retry 0
+2023-04-23T22:15:30.257157500+08:00 - error sending request for url (https://fapi.binance.com/fapi/v2/account?timestamp=1682259288143&signature=7e63de52e5817b04f6d7cd057777b3a6c91d722b9a02adedad65ba6111f27bcf): error trying to connect: tcp connect error: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (os error 10060), retry 0
+2023-04-23T22:15:51.325461+08:00 - error sending request for url (https://fapi.binance.com/fapi/v2/account?timestamp=1682259288143&signature=7e63de52e5817b04f6d7cd057777b3a6c91d722b9a02adedad65ba6111f27bcf): error trying to connect: tcp connect error: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (os error 10060), retry 0
+2023-04-23T22:16:12.359725500+08:00 - error sending request for url (https://fapi.binance.com/fapi/v2/account?timestamp=1682259288143&signature=7e63de52e5817b04f6d7cd057777b3a6c91d722b9a02adedad65ba6111f27bcf): error trying to connect: tcp connect error: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (os error 10060), retry 0
+2023-04-23T22:16:33.403531400+08:00 - error sending request for url (https://fapi.binance.com/fapi/v2/account?timestamp=1682259288143&signature=7e63de52e5817b04f6d7cd057777b3a6c91d722b9a02adedad65ba6111f27bcf): error trying to connect: tcp connect error: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (os error 10060), retry 0
+2023-04-24T10:48:55.638053800+08:00 - alarm begin(binance account)
+2023-04-24T10:48:55.638566600+08:00 - preparing...
+2023-04-24T10:49:14.352691600+08:00 - created ssh client
+2023-04-24T10:49:14.352940800+08:00 - created http client
+2023-04-24T10:49:14.353336300+08:00 - get ready for real time loop
+2023-04-24T10:49:14.353762200+08:00 - begin real time loop
+2023-04-24T10:49:14.354003+08:00 - again
+2023-04-24T10:49:14.354220+08:00 - account balance
+2023-04-24T10:49:14.674878900+08:00 - trade history
+2023-04-24T11:24:28.305497+08:00 - alarm begin(binance account)
+2023-04-24T11:24:28.305687100+08:00 - preparing...
+2023-04-24T11:24:29.674006200+08:00 - created ssh client
+2023-04-24T11:24:29.674411500+08:00 - created http client
+2023-04-24T11:24:29.674798100+08:00 - get ready for real time loop
+2023-04-24T11:24:29.675157400+08:00 - begin real time loop
+2023-04-24T11:24:29.675558600+08:00 - again
+2023-04-24T11:24:29.675854200+08:00 - account balance
+2023-04-24T11:24:30.011423600+08:00 - trade history

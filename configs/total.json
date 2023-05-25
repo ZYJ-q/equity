@@ -1,0 +1,71 @@
+{
+    "Server": {
+        "host": "139.162.122.119",
+        "username": "lzq",
+        "password": "test123456",
+        "port": "22",
+        "bot_name": "test",
+        "root_path": "/home/lzq/strategy/taker/",
+        "root_name": "nnnn2"
+    },
+    "Alarm": {
+        "group_name": "交易系统警报群1",
+        "webhook": "920aca5f-8420-4757-94ac-e6e3400fcd87"
+    },
+    "Binance": {
+        "spot": {
+            "base_url": "https://api.binance.com",
+            "api_key": "",
+            "secret_key": ""
+        },
+        "futures": {
+            "base_url": "https://fapi.binance.com",
+            "api_key": "YJ1N9IZvxjWHAJBNAT5yDeMwyQ4kEc2gxafVcGMoiNg3GFXwJBf5cwIqfh06iwuX",
+            "secret_key": "yvQhcfz9H76HKv2VEGkytvjFKjmMv1oksTj1uvOAnZJIaqEsNO1nyioxbhjQZQN3",
+            "name": "Angus",
+            "init_fund": 500
+        }
+    },
+    "Kucoin": {
+        "spot": {
+            "base_url": "https://api.kucoin.com",
+            "api_key": "6406fcae95d3540001ae60a0",
+            "secret_key": "588af041-b31a-44e5-bb46-1be209ad9692",
+            "passphrase": "Test20230307"
+        },
+        "futures": {
+            "base_url": "https://api-futures.kucoin.com",
+            "api_key": "640fe732c1185f000117c205",
+            "secret_key": "fbfa4579-328f-4b55-aeac-562eb66f6c24",
+            "passphrase": "Test20230307"
+        }
+    },
+    "AccountAlarm": {
+        "leverage": 2,
+        "net_worth": 0.002
+    },
+    "Symbols": [
+        "BTC",
+        "ETH",
+        "XRP",
+        "BNB"
+    ],
+    "Starts": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+    ],
+    "Ends": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+    ]
+}
