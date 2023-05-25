@@ -135,15 +135,15 @@ async fn real_time(
         }
 
         let res = trade_mapper::TradeMapper::insert_equity(Vec::from(equity_histories.clone()));
-        println!("插入权益数据{}", res);
+        println!("插入权益数据{}, 数据{:?}", res, Vec::from(equity_histories.clone()));
 
         
 
 
 
         // 等待下次执行
-        info!("waiting for next real time task...({})", 6000 * 10);
-        tokio::time::delay_for(Duration::from_millis(6000 * 10)).await;
+        info!("waiting for next real time task...({})", 4320000 * 10);
+        tokio::time::delay_for(Duration::from_millis(4320000 * 10)).await;
     }
 }
 

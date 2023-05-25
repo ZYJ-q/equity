@@ -40,7 +40,6 @@ impl BinanceFuturesApi {
 
         match res_data {
             Some(data) => {
-                println!("账户信息{:?}", data);
                 return Some(data);
             }
             None => {
