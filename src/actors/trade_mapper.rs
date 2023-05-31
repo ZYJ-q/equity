@@ -16,13 +16,14 @@ impl TradeMapper {
     // let query_id = conn.exec_first(, params)
 
     let flag = conn.exec_batch(
-      r"INSERT IGNORE INTO equity (name, time, equity_eth, equity)
-      VALUES (:name, :time, :equity_eth, :equity)",
+      r"INSERT IGNORE INTO equity (name, time, equity_eth, equity, prod_id)
+      VALUES (:name, :time, :equity_eth, :equity, :prod_id)",
       equitys.iter().map(|p| params! {
         "name" => &p["name"],
         "time" => &p["time"],
         "equity_eth" => &p["equity_eth"],
         "equity" => &p["equity"],
+        "prod_id" => &p["prod_id"],
       })
     );
 

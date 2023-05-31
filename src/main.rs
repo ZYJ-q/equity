@@ -110,6 +110,7 @@ async fn real_time(
                     .unwrap(),
             );
             let name = binance_config.get("name").unwrap().as_str().unwrap();
+            let pro_id = binance_config.get("pro_id").unwrap().as_str().unwrap();
 
             if let Some(data) = binance_futures_api.account(None).await {
                 let value: Value = serde_json::from_str(&data).unwrap();
@@ -148,6 +149,7 @@ async fn real_time(
             equity_map.insert(String::from("name"), Value::from(name));
             equity_map.insert(String::from("equity_eth"), Value::from(new_total_equity_eth.to_string()));
             equity_map.insert(String::from("equity"), Value::from(new_total_equity.to_string()));
+            equity_map.insert(String::from("prod_id"), Value::from(pro_id));
             equity_histories.push_back(Value::from(equity_map));
             }
     
