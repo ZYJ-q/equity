@@ -37,6 +37,14 @@
             },
             {
                 "base_url": "https://fapi.binance.com",
+                "api_key": "ZgqbiVovzWlnHjgYZEH7NjKBFol3a70ZxBrX6ypWOSzrNbQVVTCMlNQc7VIQ1JNg",
+                "secret_key": "Kcj4KlgIohUkjshK2aPixCAJAenOkBog79vrscvd3t16nFzQr1c56NUl1o5yjgVt",
+                "name": "trader04",
+                "pro_id": "4",
+                "init_fund": 500
+            },
+            {
+                "base_url": "https://fapi.binance.com",
                 "api_key": "6FbWc34XfgBTnl7bJW9dgyEeJRaj31qoVPOyv85Sp04kjvNKaAF3O2OZThnhhizf",
                 "secret_key": "lo0GpunLQfPW8dCDkaa2vY7P4tOmYKrPEzVt0pR1YrafFac7NVVUVOb0iWwTxS7Z",
                 "name": "xh01_feng4_virtual",
