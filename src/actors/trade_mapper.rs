@@ -16,14 +16,42 @@ impl TradeMapper {
     // let query_id = conn.exec_first(, params)
 
     let flag = conn.exec_batch(
-      r"INSERT IGNORE INTO equity (name, time, equity_eth, equity, prod_id)
-      VALUES (:name, :time, :equity_eth, :equity, :prod_id)",
+      r"INSERT IGNORE INTO bian_equity_f (name, time, equity, type)
+      VALUES (:name, :time, :equity, :type)",
       equitys.iter().map(|p| params! {
         "name" => &p["name"],
         "time" => &p["time"],
-        "equity_eth" => &p["equity_eth"],
         "equity" => &p["equity"],
-        "prod_id" => &p["prod_id"],
+        "type" => &p["type"],
+      })
+    );
+
+    match flag {
+      Ok(_c) => {
+        println!("insert success!");
+        return true;
+      },
+      Err(e) => {
+        eprintln!("error:{}", e);
+        return false;
+      }
+    }
+  }
+
+
+  // 插入bybit数据
+  pub fn insert_bybit_equity(equitys:Vec<Value>) -> bool {
+    // 连接数据库
+    let mut conn = get_connect();
+    // let query_id = conn.exec_first(, params)
+
+    let flag = conn.exec_batch(
+      r"INSERT IGNORE INTO bybit_equity (name, time, equity)
+      VALUES (:name, :time, :equity)",
+      equitys.iter().map(|p| params! {
+        "name" => &p["name"],
+        "time" => &p["time"],
+        "equity" => &p["equity"],
       })
     );
 

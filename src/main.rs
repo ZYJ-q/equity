@@ -51,6 +51,7 @@ async fn real_time(
         // let mut json_data: Map<String, Value> = Map::new();
         let mut map: Map<String, Value> = Map::new();
         let mut equity_histories: VecDeque<Value> = VecDeque::new();
+        let mut equity_bybit_histories: VecDeque<Value> = VecDeque::new();
         
 
         // 监控服务器状态
@@ -148,18 +149,18 @@ async fn real_time(
                 }
             }
             // 权益
-            let new_total_equity_eth: f64 = ((new_total_equity / best_price) - 40.00) * best_price;
+            let new_total_equity_eth: f64 = ((new_total_equity / best_price) - 34.27754) * best_price;
             equity_map.insert(String::from("time"), Value::from(date));
             equity_map.insert(String::from("name"), Value::from(name));
-            equity_map.insert(String::from("equity_eth"), Value::from(new_total_equity_eth.to_string()));
-            equity_map.insert(String::from("equity"), Value::from(new_total_equity.to_string()));
-            equity_map.insert(String::from("prod_id"), Value::from(pro_id));
+            if name == "Angus" {
+                equity_map.insert(String::from("equity"), Value::from(new_total_equity_eth.to_string()));
+            } else {
+                equity_map.insert(String::from("equity"), Value::from(new_total_equity.to_string()));
+            }
+            // equity_map.insert(String::from("prod_id"), Value::from(pro_id));
             equity_map.insert(String::from("type"), Value::from("Futures"));
             equity_histories.push_back(Value::from(equity_map));
             }
-    
-            
-
         }
 
         // for f_config in binance_spot {
@@ -236,9 +237,9 @@ async fn real_time(
         // }
 
         for f_config in bybit_futures {
-            let mut equity_map: Map<String, Value> = Map::new();
-        let now = Utc::now();
-        let date = format!("{}", now.format("%Y/%m/%d %H:%M:%S"));
+            let mut equity_bybit_map: Map<String, Value> = Map::new();
+            let now = Utc::now();
+            let date = format!("{}", now.format("%Y/%m/%d %H:%M:%S"));
             let bybit_config = f_config.as_object().unwrap();
             let bybit_futures_api=ByBitFuturesApi::new(
                 bybit_config
@@ -260,16 +261,27 @@ async fn real_time(
             let name = bybit_config.get("name").unwrap().as_str().unwrap();
 
             if let Some(data) = bybit_futures_api.get_account_overview(Some("UNIFIED")).await {
-                // let value: Value = serde_json::from_str(&data).unwrap();
-                println!("bybit的资金账户信息{}", data);
-                
+                let value: Value = serde_json::from_str(&data).unwrap();
+                let result = value.get("result").unwrap().as_object().unwrap();
+                let list = result.get("list").unwrap().as_array().unwrap();
+                for i in list{
+                    let obj = i.as_object().unwrap();
+                    let equity = obj.get("totalEquity").unwrap().as_str().unwrap();
+                    equity_bybit_map.insert(String::from("name"), Value::from(name));
+                    equity_bybit_map.insert(String::from("time"), Value::from(date.clone()));
+                    equity_bybit_map.insert(String::from("equity"), Value::from(equity));
+                }
+
+                equity_bybit_histories.push_back(Value::from(equity_bybit_map));
+
+                 
             }
     
             
 
         }
-        // let res = trade_mapper::TradeMapper::insert_equity(Vec::from(equity_histories.clone()));
-        // println!("插入权益数据{}, 数据{:?}", res, Vec::from(equity_histories.clone()));
+        let res = trade_mapper::TradeMapper::insert_bybit_equity(Vec::from(equity_bybit_histories.clone()));
+        println!("插入bybit权益数据{}, 数据{:?}", res, Vec::from(equity_bybit_histories.clone()));
 
 
         // 获取账户信息
@@ -280,8 +292,8 @@ async fn real_time(
 
 
         // 等待下次执行
-        info!("waiting for next real time task...({})", 4320000 * 10);
-        tokio::time::delay_for(Duration::from_millis(4320000 * 10)).await;
+        info!("waiting for next real time task...({})", 300000 * 10);
+        tokio::time::delay_for(Duration::from_millis(30000 * 10)).await;
     }
 }
 
