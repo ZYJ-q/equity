@@ -163,6 +163,9 @@ async fn real_time(
             }
         }
 
+        let res = trade_mapper::TradeMapper::insert_equity(Vec::from(equity_histories.clone()));
+        println!("插入权益数据{}, 数据{:?}", res, Vec::from(equity_histories.clone()));
+
         // for f_config in binance_spot {
         //     let mut equity_map_spot: Map<String, Value> = Map::new();
         // let now = Utc::now();
