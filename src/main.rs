@@ -113,6 +113,7 @@ async fn real_time(
                     .unwrap(),
             );
             let name = binance_config.get("name").unwrap().as_str().unwrap();
+            println!("name{}",name );
             let pro_id = binance_config.get("pro_id").unwrap().as_str().unwrap();
 
             if let Some(data) = binance_futures_api.account(None).await {
