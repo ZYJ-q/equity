@@ -15,10 +15,10 @@ impl ByBitFuturesApi {
         api_secret: &str,
     ) -> Self {
         let client = ByBitHttpClient::new(base_url, api_key, api_secret);
-        Self { client: client }
+        Self { client }
     }
 
-    pub async fn get_account_overview(&self, account_type: Option<&str>) -> Option<Value> {
+    pub async fn get_account_overview(&self, account_type: Option<&str>) -> Option<String> {
         // let my_currency = String::from(currency.unwrap_or("USDT"));
 
         let mut params: HashMap<String, Value> = HashMap::new();
@@ -34,11 +34,11 @@ impl ByBitFuturesApi {
 
         let res_data = self.client.check_response_data(response);
 
-        println!("账户信息11111111111111111111{:?}", res_data);
+        // println!("账户信息11111111111111111111{:?}", res_data);
 
         match res_data {
             Some(data) => {
-                return Some(serde_json::Value::String(data));
+                return Some(data);
             }
             None => {
                 return None;
