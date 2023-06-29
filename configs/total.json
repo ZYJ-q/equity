@@ -107,7 +107,7 @@
         },
         "futures": [
             {
-                "base_url": "/v5/account/wallet-balance",
+                "base_url": "https://api.bybit.com",
                 "api_key": "IOHISNKQGHEMHKIAUC",
                 "secret_key": "BOCBYAWEAUGPJRNGOLYIKHJKEYYUTQHHPJTN",
                 "name": "mmteam1"
