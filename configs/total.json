@@ -130,19 +130,21 @@
             }
         ]
     },
-    "Kucoin": {
+    "ByBit": {
         "spot": {
             "base_url": "https://api.kucoin.com",
             "api_key": "6406fcae95d3540001ae60a0",
             "secret_key": "588af041-b31a-44e5-bb46-1be209ad9692",
             "passphrase": "Test20230307"
         },
-        "futures": {
-            "base_url": "https://api-futures.kucoin.com",
-            "api_key": "640fe732c1185f000117c205",
-            "secret_key": "fbfa4579-328f-4b55-aeac-562eb66f6c24",
-            "passphrase": "Test20230307"
-        }
+        "futures": [
+            {
+                "base_url": "/v5/account/wallet-balance",
+                "api_key": "IOHISNKQGHEMHKIAUC",
+                "secret_key": "BOCBYAWEAUGPJRNGOLYIKHJKEYYUTQHHPJTN",
+                "name": "mmteam1"
+            }
+        ]
     },
     "AccountAlarm": {
         "leverage": 2,

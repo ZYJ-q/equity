@@ -6,6 +6,7 @@ use log::{info, warn};
 use serde_json::{Map, Value};
 // use tokio::{sync::broadcast::{self, Receiver}};
 use equity::adapters::binance::futures::http::actions::BinanceFuturesApi;
+use equity::adapters::bybit::futures::http::actions::ByBitFuturesApi;
 use equity::base::ssh::SshClient;
 use equity::base::wxbot::WxbotHttpClient;
 use equity::actors::*;
@@ -16,6 +17,7 @@ async fn real_time(
     // binance_futures_api: BinanceFuturesApi,
     binance: &Vec<Value>,
     binance_spot: &Vec<Value>,
+    bybit_futures: &Vec<Value>,
     symbols: &Vec<Value>,
     mut ssh_api: SshClient,
     wx_robot: WxbotHttpClient,
@@ -230,6 +232,40 @@ async fn real_time(
             
 
         }
+
+        for f_config in bybit_futures {
+            let mut equity_map: Map<String, Value> = Map::new();
+        let now = Utc::now();
+        let date = format!("{}", now.format("%Y/%m/%d %H:%M:%S"));
+            let bybit_config = f_config.as_object().unwrap();
+            let bybit_futures_api=ByBitFuturesApi::new(
+                bybit_config
+                    .get("base_url")
+                    .unwrap()
+                    .as_str()
+                    .unwrap(),
+                    bybit_config
+                    .get("api_key")
+                    .unwrap()
+                    .as_str()
+                    .unwrap(),
+                    bybit_config
+                    .get("secret_key")
+                    .unwrap()
+                    .as_str()
+                    .unwrap(),
+            );
+            let name = bybit_config.get("name").unwrap().as_str().unwrap();
+
+            if let Some(data) = bybit_futures_api.get_account_overview(Some("UNIFIED")).await {
+                // let value: Value = serde_json::from_str(&data).unwrap();
+                println!("bybit的资金账户信息{}", data);
+                
+            }
+    
+            
+
+        }
         // let res = trade_mapper::TradeMapper::insert_equity(Vec::from(equity_histories.clone()));
         // println!("插入权益数据{}, 数据{:?}", res, Vec::from(equity_histories.clone()));
 
@@ -278,8 +314,10 @@ async fn main() {
         // let mut futures_config: Map<String, Value> = Map::new();
         // let mut servers_config = Map::new();
         let binance_config = config.get("Binance").unwrap();
+        let bybit_config = config.get("ByBit").unwrap();
         let binance_future_config = binance_config.get("futures").unwrap().as_array().unwrap();
         let binance_spot_config = binance_config.get("spot").unwrap().as_array().unwrap();
+        let bybit_futures_config = bybit_config.get("futures").unwrap().as_array().unwrap();
         let server_config = config.get("Server").unwrap();
         let symbols = config.get("Symbols").unwrap().as_array().unwrap();
         let key = config.get("Alarm").unwrap().get("webhook").unwrap().as_str().unwrap();
@@ -357,7 +395,7 @@ async fn main() {
         
         info!("created http client");
 
-            real_time(binance_future_config, binance_spot_config, symbols, ssh_api, wx_robot, 500.0).await;
+            real_time(binance_future_config, binance_spot_config, bybit_futures_config, symbols, ssh_api, wx_robot, 500.0).await;
         
     });
 
