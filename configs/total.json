@@ -13,11 +13,64 @@
         "webhook": "920aca5f-8420-4757-94ac-e6e3400fcd87"
     },
     "Binance": {
-        "spot": {
-            "base_url": "https://api.binance.com",
-            "api_key": "",
-            "secret_key": ""
-        },
+        "spot": [
+            {
+                "base_url": "https://api.binance.com",
+                "api_key": "YJ1N9IZvxjWHAJBNAT5yDeMwyQ4kEc2gxafVcGMoiNg3GFXwJBf5cwIqfh06iwuX",
+                "secret_key": "yvQhcfz9H76HKv2VEGkytvjFKjmMv1oksTj1uvOAnZJIaqEsNO1nyioxbhjQZQN3",
+                "name": "Angus",
+                "pro_id": "2",
+                "init_fund": 500
+            },
+            {
+                "base_url": "https://api.binance.com",
+                "api_key": "sIy6uALccS6TZYQf9hJrL0Z3R2R9nKU0Drnh7bqsNAugrHN0cgO2QcYb11QrcMgI",
+                "secret_key": "RaUHaC0GL735GATWiJJt4B9LBdW4ZHZ25e8BuG2Xh1CNBqu2ZtcU8vMeATHrFhNx",
+                "name": "trader02",
+                "pro_id": "3",
+                "init_fund": 500
+            },
+            {
+                "base_url": "https://api.binance.com",
+                "api_key": "ZgqbiVovzWlnHjgYZEH7NjKBFol3a70ZxBrX6ypWOSzrNbQVVTCMlNQc7VIQ1JNg",
+                "secret_key": "Kcj4KlgIohUkjshK2aPixCAJAenOkBog79vrscvd3t16nFzQr1c56NUl1o5yjgVt",
+                "name": "trader04",
+                "pro_id": "3",
+                "init_fund": 500
+            },
+            {
+                "base_url": "https://api.binance.com",
+                "api_key": "6FbWc34XfgBTnl7bJW9dgyEeJRaj31qoVPOyv85Sp04kjvNKaAF3O2OZThnhhizf",
+                "secret_key": "lo0GpunLQfPW8dCDkaa2vY7P4tOmYKrPEzVt0pR1YrafFac7NVVUVOb0iWwTxS7Z",
+                "name": "xh01_feng4_virtual",
+                "pro_id": "4",
+                "init_fund": 500
+            },
+            {
+                "base_url": "https://api.binance.com",
+                "api_key": "HlzHqL5pw5ZOsHzN1cJQRSQRq03THqq3UdaL6iHliMdUpVFBSyPRgQXvXZRz3HGO",
+                "secret_key": "Zn00sJu6TxJLB2ubnuF95dTlmmm9lSmhOfy4K3pY9yn3AkOprr2X5KXALk2ZUEjo",
+                "name": "xh02_b20230524_virtual",
+                "pro_id": "4",
+                "init_fund": 500
+            },
+            {
+                "base_url": "https://api.binance.com",
+                "api_key": "4oxmguAj2VjCLOCPMnyj82BWHsLmLI5NRnKzVCxdnETL1KYh2j39ojh3qOBEH35E",
+                "secret_key": "NP97PliaNviD58MT5AYO5GSV988Paw2qrYRqYLMsUNCE3yZQRkOKzwMF5PkdE2vB",
+                "name": "xh03_feng3_virtual",
+                "pro_id": "4",
+                "init_fund": 500
+            },
+            {
+                "base_url": "https://api.binance.com",
+                "api_key": "ffzEGr8zdQjezGw1NeSOCxlZlQVBlRUsTImcEcvTddiP0g7cSvJ4GmBW2qyHP9SQ",
+                "secret_key": "HtZXqInQ0RLzi8Dko4gDIIf0K3Y7IP8LzeUjSdTFM9BgqqIIV2u4t27Xk07ghauS",
+                "name": "xh04_20230524_virtual",
+                "pro_id": "4",
+                "init_fund": 500
+            },
+        ],
         "futures": [
             {
                 "base_url": "https://fapi.binance.com",
