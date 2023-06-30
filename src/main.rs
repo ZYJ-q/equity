@@ -114,6 +114,7 @@ async fn real_time(
                     .unwrap(),
             );
             let name = binance_config.get("name").unwrap().as_str().unwrap();
+            let new_name: f64 = binance_config.get("name").unwrap().as_str().unwrap().parse().unwrap();
             println!("name{}",name );
             let pro_id = binance_config.get("pro_id").unwrap().as_str().unwrap();
 
@@ -151,7 +152,7 @@ async fn real_time(
             // 权益
             let new_total_equity_eth: f64 = ((new_total_equity / best_price) - 34.27754) * best_price;
             equity_map.insert(String::from("time"), Value::from(date));
-            equity_map.insert(String::from("name"), Value::from(name));
+            equity_map.insert(String::from("name"), Value::from(new_name));
             if name == "Angus" {
                 equity_map.insert(String::from("equity"), Value::from(new_total_equity_eth.to_string()));
             } else {
@@ -283,8 +284,8 @@ async fn real_time(
             
 
         }
-        let res = trade_mapper::TradeMapper::insert_bybit_equity(Vec::from(equity_bybit_histories.clone()));
-        println!("插入bybit权益数据{}, 数据{:?}", res, Vec::from(equity_bybit_histories.clone()));
+        // let res = trade_mapper::TradeMapper::insert_bybit_equity(Vec::from(equity_bybit_histories.clone()));
+        // println!("插入bybit权益数据{}, 数据{:?}", res, Vec::from(equity_bybit_histories.clone()));
 
 
         // 获取账户信息
