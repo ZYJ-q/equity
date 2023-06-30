@@ -152,7 +152,7 @@ async fn real_time(
             let new_total_equity_eth: f64 = ((new_total_equity / best_price) - 34.27754) * best_price;
             equity_map.insert(String::from("time"), Value::from(date));
             equity_map.insert(String::from("name"), Value::from(new_name));
-            if name == "Angus" {
+            if name == "3" {
                 equity_map.insert(String::from("equity"), Value::from(new_total_equity_eth.to_string()));
             } else {
                 equity_map.insert(String::from("equity"), Value::from(new_total_equity.to_string()));
