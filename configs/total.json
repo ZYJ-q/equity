@@ -18,7 +18,7 @@
                 "base_url": "https://api.binance.com",
                 "api_key": "YJ1N9IZvxjWHAJBNAT5yDeMwyQ4kEc2gxafVcGMoiNg3GFXwJBf5cwIqfh06iwuX",
                 "secret_key": "yvQhcfz9H76HKv2VEGkytvjFKjmMv1oksTj1uvOAnZJIaqEsNO1nyioxbhjQZQN3",
-                "name": "Angus",
+                "name": "3",
                 "pro_id": "2",
                 "init_fund": 500
             },
@@ -26,7 +26,7 @@
                 "base_url": "https://api.binance.com",
                 "api_key": "sIy6uALccS6TZYQf9hJrL0Z3R2R9nKU0Drnh7bqsNAugrHN0cgO2QcYb11QrcMgI",
                 "secret_key": "RaUHaC0GL735GATWiJJt4B9LBdW4ZHZ25e8BuG2Xh1CNBqu2ZtcU8vMeATHrFhNx",
-                "name": "trader02",
+                "name": "4",
                 "pro_id": "3",
                 "init_fund": 500
             },
@@ -34,7 +34,7 @@
                 "base_url": "https://api.binance.com",
                 "api_key": "ZgqbiVovzWlnHjgYZEH7NjKBFol3a70ZxBrX6ypWOSzrNbQVVTCMlNQc7VIQ1JNg",
                 "secret_key": "Kcj4KlgIohUkjshK2aPixCAJAenOkBog79vrscvd3t16nFzQr1c56NUl1o5yjgVt",
-                "name": "trader04",
+                "name": "5",
                 "pro_id": "3",
                 "init_fund": 500
             },
@@ -42,7 +42,7 @@
                 "base_url": "https://api.binance.com",
                 "api_key": "6FbWc34XfgBTnl7bJW9dgyEeJRaj31qoVPOyv85Sp04kjvNKaAF3O2OZThnhhizf",
                 "secret_key": "lo0GpunLQfPW8dCDkaa2vY7P4tOmYKrPEzVt0pR1YrafFac7NVVUVOb0iWwTxS7Z",
-                "name": "xh01_feng4_virtual",
+                "name": "7",
                 "pro_id": "4",
                 "init_fund": 500
             },
@@ -50,7 +50,15 @@
                 "base_url": "https://api.binance.com",
                 "api_key": "HlzHqL5pw5ZOsHzN1cJQRSQRq03THqq3UdaL6iHliMdUpVFBSyPRgQXvXZRz3HGO",
                 "secret_key": "Zn00sJu6TxJLB2ubnuF95dTlmmm9lSmhOfy4K3pY9yn3AkOprr2X5KXALk2ZUEjo",
-                "name": "xh02_b20230524_virtual",
+                "name": "8",
+                "pro_id": "4",
+                "init_fund": 500
+            },
+            {
+                "base_url": "https://api.binance.com",
+                "api_key": "knSdgBrtCd6BGlmMO5aHXmacsq4JfPPcra4V9qZiWI1DzqxbnCzPyOzrFYcdX9jr",
+                "secret_key": "NJlnEJgxajq3XFxGIcNQ4byBX3dcXPy2C1eE3gmlvBBn7WaE2SP7pTK8RwZT2Ds9",
+                "name": "9",
                 "pro_id": "4",
                 "init_fund": 500
             }
@@ -60,7 +68,7 @@
                 "base_url": "https://fapi.binance.com",
                 "api_key": "YJ1N9IZvxjWHAJBNAT5yDeMwyQ4kEc2gxafVcGMoiNg3GFXwJBf5cwIqfh06iwuX",
                 "secret_key": "yvQhcfz9H76HKv2VEGkytvjFKjmMv1oksTj1uvOAnZJIaqEsNO1nyioxbhjQZQN3",
-                "name": "Angus",
+                "name": "3",
                 "pro_id": "2",
                 "init_fund": 500
             },
@@ -68,7 +76,7 @@
                 "base_url": "https://fapi.binance.com",
                 "api_key": "sIy6uALccS6TZYQf9hJrL0Z3R2R9nKU0Drnh7bqsNAugrHN0cgO2QcYb11QrcMgI",
                 "secret_key": "RaUHaC0GL735GATWiJJt4B9LBdW4ZHZ25e8BuG2Xh1CNBqu2ZtcU8vMeATHrFhNx",
-                "name": "trader02",
+                "name": "4",
                 "pro_id": "3",
                 "init_fund": 500
             },
@@ -76,7 +84,7 @@
                 "base_url": "https://fapi.binance.com",
                 "api_key": "ZgqbiVovzWlnHjgYZEH7NjKBFol3a70ZxBrX6ypWOSzrNbQVVTCMlNQc7VIQ1JNg",
                 "secret_key": "Kcj4KlgIohUkjshK2aPixCAJAenOkBog79vrscvd3t16nFzQr1c56NUl1o5yjgVt",
-                "name": "trader04",
+                "name": "5",
                 "pro_id": "3",
                 "init_fund": 500
             },
@@ -84,7 +92,7 @@
                 "base_url": "https://fapi.binance.com",
                 "api_key": "6FbWc34XfgBTnl7bJW9dgyEeJRaj31qoVPOyv85Sp04kjvNKaAF3O2OZThnhhizf",
                 "secret_key": "lo0GpunLQfPW8dCDkaa2vY7P4tOmYKrPEzVt0pR1YrafFac7NVVUVOb0iWwTxS7Z",
-                "name": "xh01_feng4_virtual",
+                "name": "7",
                 "pro_id": "4",
                 "init_fund": 500
             },
@@ -92,7 +100,15 @@
                 "base_url": "https://fapi.binance.com",
                 "api_key": "HlzHqL5pw5ZOsHzN1cJQRSQRq03THqq3UdaL6iHliMdUpVFBSyPRgQXvXZRz3HGO",
                 "secret_key": "Zn00sJu6TxJLB2ubnuF95dTlmmm9lSmhOfy4K3pY9yn3AkOprr2X5KXALk2ZUEjo",
-                "name": "xh02_b20230524_virtual",
+                "name": "8",
+                "pro_id": "4",
+                "init_fund": 500
+            },
+            {
+                "base_url": "https://api.binance.com",
+                "api_key": "knSdgBrtCd6BGlmMO5aHXmacsq4JfPPcra4V9qZiWI1DzqxbnCzPyOzrFYcdX9jr",
+                "secret_key": "NJlnEJgxajq3XFxGIcNQ4byBX3dcXPy2C1eE3gmlvBBn7WaE2SP7pTK8RwZT2Ds9",
+                "name": "9",
                 "pro_id": "4",
                 "init_fund": 500
             }
@@ -110,7 +126,7 @@
                 "base_url": "https://api.bybit.com",
                 "api_key": "IOHISNKQGHEMHKIAUC",
                 "secret_key": "BOCBYAWEAUGPJRNGOLYIKHJKEYYUTQHHPJTN",
-                "name": "mmteam1"
+                "name": "11"
             }
         ]
     },
