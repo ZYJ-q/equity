@@ -114,7 +114,7 @@ async fn real_time(
                     .unwrap(),
             );
             let name = binance_config.get("name").unwrap().as_str().unwrap();
-            let new_name: f64 = binance_config.get("name").unwrap().as_str().unwrap().parse().unwrap();
+            let new_name: u64 = binance_config.get("name").unwrap().as_str().unwrap().parse().unwrap();
             println!("name{}",name );
             let pro_id = binance_config.get("pro_id").unwrap().as_str().unwrap();
 
