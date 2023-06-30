@@ -114,8 +114,7 @@ async fn real_time(
                     .unwrap(),
             );
             let name = binance_config.get("name").unwrap().as_str().unwrap();
-            let new_name = format!("{}", name);
-            println!("name{}",name );
+            let new_name:u64 = name.parse().unwrap();
             let pro_id = binance_config.get("pro_id").unwrap().as_str().unwrap();
 
             if let Some(data) = binance_futures_api.account(None).await {
